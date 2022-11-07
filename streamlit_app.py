@@ -25,6 +25,13 @@ if cargararchivo:
     col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
     col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
     df = pd.read_csv(cargararchivo)
+ 
+    fig, ax = plt.subplot(1,1)
+    ax.scatter(x=df['Sales quantity'], y=df['Sales amount'])
+    ax.set_xlabel('Sales quantity')
+    ax.set_ylabel('Sales amount')
+    st.pyplot(fig)
+    
     st.write(df.describe())
     st.dataframe(df)
     
