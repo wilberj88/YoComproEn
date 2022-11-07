@@ -15,5 +15,5 @@ st.header("Análisis de Datos de YoComproEn_MetroSt24")
 st.write("Ventas, Precios y Ubicaciones")
 
 #DATA
-precios = pd.read_excel('PreciosProductosAlucheDepurados27jun4nov.xlsx')
+precios = pd.read_excel('/PreciosProductosAlucheDepurados27jun4nov.xlsx')
 st.line_chart(precios)
