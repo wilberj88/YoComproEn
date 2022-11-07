@@ -17,9 +17,9 @@ st.write("Información de ventas y precios entre el 27 de junio y el 4 de noviem
 st.markdown('Principales resultados')
 
 col1, col2, col3 = st.columns(3)
-col1.metric(label ="Ventas", value = '7.572€', delta='27Jun4Nov')
-col2.metric("Productos para 50% Ventas", "3", "-1")
-col3.metric("Productos Inferiores al 1% ventas", "86%", "4%")
+col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
+col2.metric("Ventas Máquina A", "6525,9€", "27Jun4Nov")
+col3.metric("Ventas Máquina B", "1046,1€", "27Jun4Nov")
 
 #DATA
 precios = st.dataframe(pd.read_excel('/PreciosProductosAlucheDepurados27jun4nov.xlsx'))
