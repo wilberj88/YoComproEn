@@ -8,11 +8,11 @@ import pydeck as pdk
 
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
-st.set_page_config(layout="wide", page_title="Novus Solutions", page_icon="🧠")
+st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="🧠")
 
-st.title('Novus Solutions')
-st.header("Análisis de Datos 🔍 de YoComproEn_MetroSt24 📝 ")
-st.markdown('Principales resultados')
+st.title('Novus Mando 🧠')
+st.header("Monitor Datos + Alarmas + Recomendaciones 🔍 de YoComproEn_MetroSt24 📝 ")
+st.markdown('ACTIVA EL MONITOR: Carga tu archivo')
 
 #DATA
 cargararchivo = st.file_uploader('Carga el archivo de ventas depurado de YoComproEn')
