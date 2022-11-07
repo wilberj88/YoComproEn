@@ -20,9 +20,11 @@ col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
 col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 
 #DATA
-cargararchivo = st.file_uploader('Carga el archivo de ventas depurado')
-df = pd.read_csv(cargararchivo)
-st.dataframe(df)
+cargararchivo = st.file_uploader('Carga el archivo de ventas depurado de YoComproEn')
+if cargararchivo:
+    df = pd.read_csv(cargararchivo)
+    st.write(df.describe())
+    st.dataframe(df)
 
 st.write("Desagregación de Ventas por Ubicación")
 #datos
