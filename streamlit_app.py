@@ -16,8 +16,8 @@ st.markdown('Principales resultados')
 
 col1, col2, col3 = st.columns(3)
 col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
-col2.metric("Ventas Máquina A", "6525,9€", "27Jun4Nov")
-col3.metric("Ventas Máquina B", "1046,1€", "27Jun4Nov")
+col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
+col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 
 #DATA
 cargararchivo = st.file_uploader('Carga el archivo de ventas depurado')
@@ -27,13 +27,13 @@ st.dataframe(df)
 st.write("Desagregación de Ventas por Ubicación")
 #datos
 df = pd.DataFrame(
-np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+np.random.randn(1000, 2) / [50, 50] + [40.25, 3.42],
 columns=['lat', 'lon'])
 st.pydeck_chart(pdk.Deck(
 map_style=None,
 initial_view_state=pdk.ViewState(
-    latitude=37.76,
-    longitude=-122.4,
+    latitude=40.25,
+    longitude=3.42,
     zoom=11,
     pitch=50,
 ),
