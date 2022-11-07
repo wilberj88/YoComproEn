@@ -22,4 +22,4 @@ col3.metric("Ventas Máquina B", "1046,1€", "27Jun4Nov")
 #DATA
 cargararchivo = st.file_uploader('Carga el archivo de ventas depurado')
 df = pd.read_csv(cargararchivo)
-st.write(df.describe())
+st.write(df)
