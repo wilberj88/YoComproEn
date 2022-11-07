@@ -24,6 +24,9 @@ if cargararchivo:
     df = pd.read_csv(cargararchivo)
     st.write(df.describe())
     st.dataframe(df)
+    
+    st.header('Alarmas')
+    st.write(df.head())
 
     st.write("Desagregación de Ventas por Ubicación")
     #datos
