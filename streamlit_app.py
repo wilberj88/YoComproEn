@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="🧠")
 
 st.title('Novus Mando 🧠')
-st.header("Monitor Datos + Alarmas + Recomendaciones 🔍 Madrid, Aluche - YoComproEn_MetroSt24 📝 ")
+st.header("Monitor + Alarmas + Recomendaciones 🔍 Madrid, Aluche - YoComproEn_MetroSt24 📝 ")
 st.markdown('ACTIVA EL MONITOR: Carga tu archivo')
 
 #DATA
