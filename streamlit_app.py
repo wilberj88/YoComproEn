@@ -24,7 +24,7 @@ cargararchivo = st.file_uploader('Carga el archivo de ventas depurado')
 df = pd.read_csv(cargararchivo)
 st.dataframe(df)
 
-st.write("Desagregación de votos por barrios de acuerdo con las votaciones históricas")
+st.write("Desagregación de Ventas por Ubicación")
 #datos
 df = pd.DataFrame(
 np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
