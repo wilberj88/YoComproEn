@@ -26,6 +26,9 @@ if cargararchivo:
     st.dataframe(df)
     
     st.header('Alarmas')
+    alarma1, alarma2 = st.columns(2)
+    alarma1.metric("Productos + vendidos", "8.9.11")
+    alarma2.metric("Horarios + vendidos", "8.9.11")
     st.write(df.head())
 
     st.write("Desagregación de Ventas por Ubicación")
