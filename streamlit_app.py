@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="🧠")
 
-st.title('Novus Mando 🧠')
+st.title('Novus Mando ⚙️')
 st.header("Monitor 📺 + Alarmas ⚠️ + Recomendaciones 🧠")
 st.write("Aluche, Madrid - YoComproEn_MetroSt24 📝")
 st.markdown('ACTIVA EL MONITOR: Carga tu archivo')
