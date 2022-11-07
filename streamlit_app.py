@@ -28,9 +28,9 @@ if cargararchivo:
     
     st.header('Alarmas')
     alarma1, alarma2, alarma3 = st.columns(3)
-    alarma1.metric("Productos - vendidos", "1/2/18", "-85%")
-    alarma2.metric("Horarios - vendidos", "16h.13h.18h", "-73%")
-    alarma3.metric("Inventario + rotación", "8-32-33", "485%")
+    alarma1.metric("Productos - vendidos", "1/2/18", "-85%prom")
+    alarma2.metric("Horarios - vendidos", "16h.13h.18h", "-73%prom")
+    alarma3.metric("Inventario + rotación", "8-32-33", "485%prom")
     st.write(df.head())
 
     st.write("Desagregación de Ventas por Ubicación")
