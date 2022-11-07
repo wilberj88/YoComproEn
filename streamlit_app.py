@@ -13,3 +13,6 @@ st.title('Novus Solutions')
 st.header("Análisis de Datos de YoComproEn_MetroSt24")
 st.write("Ventas, Precios y Ubicaciones")
 
+#DATA
+precios = pd.DataFrame('PreciosProductosAlucheDepurados27jun4nov.xlsx')
+st.line_chart(precios)
