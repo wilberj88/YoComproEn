@@ -19,7 +19,7 @@ st.markdown('ACTIVA EL MONITOR: Carga tu archivo')
 #DATA
 cargararchivo = st.file_uploader('Carga el archivo de ventas depurado de YoComproEn')
 if cargararchivo:
-    st.header("Monitor de Aluche, Madrid - YoComproEn_MetroSt24 📝 ")
+    st.header("Monitor de YoComproEn_MetroSt24 📝 ")
     col1, col2, col3 = st.columns(3)
     col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
     col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
