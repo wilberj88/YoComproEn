@@ -17,7 +17,7 @@ st.write("Información de ventas y precios entre el 27 de junio y el 4 de noviem
 st.markdown('##Principales resultados')
 
 col1, col2, col3 = st.columns(3)
-col1.metric(label ="Ventas", value = '%.2F')
+col1.metric(label ="Ventas", value = '7.572€')
 col2.metric("Productos para 50% Ventas", "3", "-1")
 col3.metric("Productos Inferiores al 1% ventas", "86%", "4%")
 
