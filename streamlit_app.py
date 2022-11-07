@@ -12,8 +12,6 @@ st.set_page_config(layout="wide", page_title="Novus Solutions", page_icon="🧠"
 
 st.title('Novus Solutions')
 st.header("Análisis de Datos 🔍 de YoComproEn_MetroSt24 📝 ")
-st.write("Información de ventas y precios entre el 27 de junio y el 4 de noviembre de 2022")
-
 st.markdown('Principales resultados')
 
 col1, col2, col3 = st.columns(3)
