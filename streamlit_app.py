@@ -13,7 +13,7 @@ st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="🧠")
 
 st.title('Novus Mando ⚙️')
 st.header("Monitor 📺 + Alarmas ⚠️ + Recomendaciones 🧠")
-st.write("Aluche, Madrid - YoComproEn_MetroSt24 📝")
+st.subheader("Aluche, Madrid - YoComproEn_MetroSt24 📝")
 st.markdown('ACTIVA EL MONITOR: Carga tu archivo')
 
 #DATA
