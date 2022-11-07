@@ -14,14 +14,13 @@ st.title('Novus Solutions')
 st.header("Análisis de Datos 🔍 de YoComproEn_MetroSt24 📝 ")
 st.markdown('Principales resultados')
 
-col1, col2, col3 = st.columns(3)
-col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
-col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
-col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
-
 #DATA
 cargararchivo = st.file_uploader('Carga el archivo de ventas depurado de YoComproEn')
 if cargararchivo:
+    col1, col2, col3 = st.columns(3)
+    col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
+    col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
+    col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
     df = pd.read_csv(cargararchivo)
     st.write(df.describe())
     st.dataframe(df)
