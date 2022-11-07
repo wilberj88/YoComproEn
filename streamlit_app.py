@@ -27,8 +27,8 @@ if cargararchivo:
     
     st.header('Alarmas')
     alarma1, alarma2, alarma3 = st.columns(3)
-    alarma1.metric("Productos - vendidos", "1-2-18")
-    alarma2.metric("Horarios - vendidos", "4pm.1pm.6pm")
+    alarma1.metric("Productos - vendidos", "1/2/18")
+    alarma2.metric("Horarios - vendidos", "16h.13h.18h")
     alarma3.metric("Inventario + rotación", "8-32-33")
     st.write(df.head())
 
