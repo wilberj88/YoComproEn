@@ -20,5 +20,4 @@ col2.metric("Ventas Máquina A", "6525,9€", "27Jun4Nov")
 col3.metric("Ventas Máquina B", "1046,1€", "27Jun4Nov")
 
 #DATA
-precios = st.dataframe(pd.read_excel('/PreciosProductosAlucheDepurados27jun4nov.xlsx'))
-
+cargararchivo = st.file_uploader('Carga el archivo de ventas depurado')
