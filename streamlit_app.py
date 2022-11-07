@@ -5,6 +5,7 @@ import numpy as np
 import plotly.figure_factory as ff
 import altair as alt
 import pydeck as pdk
+import matplotlib.pyplot as plt
 
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
@@ -27,9 +28,9 @@ if cargararchivo:
     
     st.header('Alarmas')
     alarma1, alarma2, alarma3 = st.columns(3)
-    alarma1.metric("Productos - vendidos", "1/2/18")
-    alarma2.metric("Horarios - vendidos", "16h.13h.18h")
-    alarma3.metric("Inventario + rotación", "8-32-33")
+    alarma1.metric("Productos - vendidos", "1/2/18", "-85%")
+    alarma2.metric("Horarios - vendidos", "16h.13h.18h", "-73%")
+    alarma3.metric("Inventario + rotación", "8-32-33", "485%")
     st.write(df.head())
 
     st.write("Desagregación de Ventas por Ubicación")
