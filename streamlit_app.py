@@ -23,4 +23,4 @@ col3.metric("Productos Inferiores al 1% ventas", "86%", "4%")
 
 #DATA
 precios = pd.DataFrame(pd.read_excel('/PreciosProductosAlucheDepurados27jun4nov.xlsx')
-st.line_chart(precios)
+print(precios)
