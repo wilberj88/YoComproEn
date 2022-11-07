@@ -22,5 +22,5 @@ col2.metric("Productos para 50% Ventas", "3", "-1")
 col3.metric("Productos Inferiores al 1% ventas", "86%", "4%")
 
 #DATA
-precios = pd.DataFrame(pd.read_excel('/PreciosProductosAlucheDepurados27jun4nov.xlsx')
-print(precios)
+precios = pd.read_excel('/PreciosProductosAlucheDepurados27jun4nov.xlsx')
+st.dataframe(precios)
