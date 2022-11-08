@@ -51,9 +51,9 @@ if cargararchivo:
 
     st.header('Recomendaciones de Aluche, Madrid - YoComproEn_MetroSt24 📝')
     recomendacion1, recomendacion2, recomendacion3 = st.columns(3)
-    recomendacion1.metric("Productos + vendidos", "1/2/18", "85%prom")
-    recomendacion2.metric("Horarios + vendidos", "16h.13h.18h", "73%prom")
-    recomendacion3.metric("Inventario - rotación", "8-32-33", "-485%prom")
+    recomendacion1.metric("Productos + vendidos", "8-32-33", "85%prom")
+    recomendacion2.metric("Horarios + vendidos", "1h.0h.2h", "73%prom")
+    recomendacion3.metric("Inventario - rotación", "1-2-18", "-485%prom")
     st.write(df.head())
 
     st.write("Georeferenciación de las Ventas")
