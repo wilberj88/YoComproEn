@@ -12,10 +12,10 @@ import datetime
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
 st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="🧠")
 
-st.title('Novus Mando ⚙️')
-st.header("Monitor 📺 + Alarmas ⚠️ + Recomendaciones 🧠")
-st.subheader("Aluche, Madrid - YoComproEn_MetroSt24 📝")
-st.markdown('ACTIVA EL MONITOR: Carga tu archivo')
+st.title('Novus Mando ⚙️ - YoComproEn  🛒')
+st.header("Monitor de Horarios y Productos 📺 + Alarmas de productos menos vendidos ⚠️ + Recomendaciones de amplificación de ventas 🧠")
+st.subheader("Aluche, Madrid - MetroSt24 📝")
+st.markdown('Datos del 27 de junio de 2022 a 4 de noviembre de 2022: 130 días ☀️ con sus noches 🌛')
 
 #DATA
 cargararchivo = st.file_uploader('Carga el archivo de ventas depurado de YoComproEn')
