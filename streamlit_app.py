@@ -56,7 +56,7 @@ if cargararchivo:
     recomendacion3.metric("Inventario - rotación", "8-32-33", "-485%prom")
     st.write(df.head())
 
-    st.write("Georeferenciación de las Ventas"
+    st.write("Georeferenciación de las Ventas")
     #datos
     df = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
