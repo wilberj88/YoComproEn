@@ -35,7 +35,7 @@ st.text('This is some text.')
 #ALARMAS
 st.header("Alarmas de Bajas Ventas ⚠️")
 st.write('1 + 1 = ', 2)
-st.write('Below is a DataFrame:', data_frame, 'Above is a dataframe.')
+st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 st.text('This is some text.')
 
 #RECOMENDACIONES
