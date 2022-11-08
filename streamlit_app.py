@@ -26,6 +26,12 @@ if cargararchivo:
     col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
     df = pd.read_csv(cargararchivo)
  
+    st.line_chart(df)
+    
+    st.bar_chart(df)
+    
+    st.area_chart(df)
+    
     fig, ax = plt.subplots(1,1)
     ax.scatter(x=df['Sales amount'], y=df['TrSalePrice'])
     ax.set_xlabel('Sales amount')
