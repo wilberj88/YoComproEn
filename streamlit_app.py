@@ -13,10 +13,44 @@ import datetime
 st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="🧠")
 
 st.title('Novus Mando ⚙️ - YoComproEn  🛒')
+
+#MONITOR
 st.header("Monitor de Horarios y Productos 📺")
+st.write(1234)
+
+df = pd.DataFrame(
+    np.random.randn(200, 3),
+    columns=['a', 'b', 'c'])
+c = alt.Chart(df).mark_circle().encode(
+    x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
+
+st.write(c)
+
+st.write(pd.DataFrame({
+    'first column': [1, 2, 3, 4],
+    'second column': [10, 20, 30, 40],
+}))
+st.text('This is some text.')
+
+#ALARMAS
 st.header("Alarmas de Bajas Ventas ⚠️")
+st.write('1 + 1 = ', 2)
+st.write('Below is a DataFrame:', data_frame, 'Above is a dataframe.')
+st.text('This is some text.')
+
+#RECOMENDACIONES
 st.header("Recomendaciones para Aumentar Ventas 🧠")
-st.markdown('Datos del 27 de junio de 2022 a 4 de noviembre de 2022: 130 días ☀️ con sus noches 🌛')
+st.write(1234)
+st.write(pd.DataFrame({
+    'first column': [1, 2, 3, 4],
+    'second column': [10, 20, 30, 40],
+}))
+st.text('This is some text.')
+
+st.caption('Datos del 27 de junio de 2022 a 4 de noviembre de 2022: 130 días ☀️ con sus noches 🌛')
+
+
+
 
 #DATA
 cargararchivo = st.file_uploader('Carga el archivo de ventas depurado de YoComproEn')
