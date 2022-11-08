@@ -13,7 +13,9 @@ import datetime
 st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="🧠")
 
 st.title('Novus Mando ⚙️ - YoComproEn  🛒')
-st.header("Monitor de Horarios y Productos 📺 + Alarmas de productos menos vendidos ⚠️ + Recomendaciones de amplificación de ventas 🧠")
+st.header("Monitor de Horarios y Productos 📺")
+st.header("Alarmas de Bajas Ventas ⚠️")
+st.header("Recomendaciones para Aumentar Ventas 🧠")
 st.subheader("Aluche, Madrid - MetroSt24 📝")
 st.markdown('Datos del 27 de junio de 2022 a 4 de noviembre de 2022: 130 días ☀️ con sus noches 🌛')
 
