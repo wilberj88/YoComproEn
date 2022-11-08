@@ -6,6 +6,7 @@ import plotly.figure_factory as ff
 import altair as alt
 import pydeck as pdk
 import matplotlib.pyplot as plt
+import datetime
 
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
