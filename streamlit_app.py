@@ -57,6 +57,12 @@ if cargararchivo:
     st.write(df.head())
 
     st.write("Georeferenciación de las Ventas")
+    fechaanalisis = st.date_input(
+        "Elige una fecha disponible", 
+        value=date(2022,6,27),
+        min_value=date(2022,6,27),
+        max_value=date(2022,11,4),
+    )    
     #datos    
     df = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
