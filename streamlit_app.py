@@ -15,7 +15,7 @@ st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="🧠")
 st.title('Novus Mando ⚙️ - YoComproEn  🛒')
 st.subheader("Aluche, Madrid - MetroSt24 📝")
 
-st.header('<div style="text-align:center;"Monitor de Horarios y Productos 📺</div>", usafe_allow_html=True)
+st.header('<div style="text-align:center;"Monitor de Horarios y Productos 📺</div>", unsafe_allow_html=True)
 st.header("Alarmas de Bajas Ventas ⚠️")
 st.header("Recomendaciones para Aumentar Ventas 🧠")
 
