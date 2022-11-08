@@ -49,15 +49,15 @@ if cargararchivo:
     recomendacion3.metric("Inventario - rotación", "8-32-33", "-485%prom")
     st.write(df.head())
 
-    st.write("Desagregación de Ventas por Ubicación")
+    st.write("Georeferenciación de las Ventas")
     #datos
     df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [40.25, 3.42],
+    np.random.randn(1000, 2) / [50, 50] + [43.47, 3.41],
     columns=['lat', 'lon'])
     st.pydeck_chart(pdk.Deck(
     map_style=None,
     initial_view_state=pdk.ViewState(
-        latitude=40.25,
+        latitude=43.47,
         longitude=3.42,
         zoom=11,
         pitch=50,
