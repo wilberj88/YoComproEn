@@ -27,7 +27,7 @@ if cargararchivo:
     df = pd.read_csv(cargararchivo)
  
     fig, ax = plt.subplots(1,1)
-    ax.scatter(x=df['Sales quantity'], y=df['Sales amount'])
+    ax.scatter(x=df['Hora'], y=df['VentasTotalesXHora'])
     ax.set_xlabel('Hora')
     ax.set_ylabel('VentasTotalesXHora')
     st.pyplot(fig)
