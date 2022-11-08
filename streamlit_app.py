@@ -28,8 +28,8 @@ if cargararchivo:
  
     fig, ax = plt.subplots(1,1)
     ax.scatter(x=df['Sales quantity'], y=df['Sales amount'])
-    ax.set_xlabel('Sales quantity')
-    ax.set_ylabel('Sales amount')
+    ax.set_xlabel('Hora')
+    ax.set_ylabel('VentasTotalesXHora')
     st.pyplot(fig)
     
     st.write(df.describe())
