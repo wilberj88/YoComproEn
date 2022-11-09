@@ -73,14 +73,7 @@ st.write(
         ],
         ))
 
-df = pd.DataFrame(
-    np.random.randn(200, 3),
-    columns=['Hora', 'Ventas', 'Productos'])
-
-st.write(pd.DataFrame({
-    'Horas de mayores ventas': [1, 2, 3, 4],
-    'ID de productos más vendidos': [10, 20, 30, 40],
-}))
+st.markdown('CONCLUSIONES MONITOR')
 st.text('3 productos de 30 generan más del 50% de la facturación')
 st.text('Las horas de mayor facturación son en la madrugada, seguido de la mañana')
 
