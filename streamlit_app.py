@@ -28,7 +28,19 @@ col1, col2, col3 = st.columns(3)
 col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
 col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
 col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
+hora_seleccionada = st.slider(
+    "Selecciona una hora de análisis", 0, 23)
 st.write(1234)
+st.write(
+    pdk.Deck(
+        map_style="mapbox://styles/mapbox/light-v9",
+        initial_view_state={
+            "latitude": 40.3875,
+            "longitude": -3.7575416667,
+            "zoom": 12,
+            "pitch": 50,
+        }
+)
 
 df = pd.DataFrame(
     np.random.randn(200, 3),
