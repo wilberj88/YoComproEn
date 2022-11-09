@@ -31,13 +31,39 @@ col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 hora_seleccionada = st.slider(
     "Selecciona una hora de análisis", 0, 23)
 st.write(1234)
+
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=['lat', 'lon'])
+    st.map(df)
+    
 st.write(
     pdk.Deck(map_style="mapbox://styles/mapbox/light-v9",
         initial_view_state={
             "latitude": 40.3875,
             "longitude": -3.7575416667,
             "zoom": 12,
-            "pitch": 50}))
+            "pitch": 50},
+        layers=[
+            pdk.Layer(
+                'HexagonLayer',
+                data=df,
+                get_position='[lon, lat]',
+                radius=200,
+                elevation_scale=4,
+                elevation_range=[0, 1000],
+                pickable=True,
+                extruded=True,
+                ),
+             pdk.Layer(
+                'ScatterplotLayer',
+                data=df,
+                get_position='[lon, lat]',
+                get_color='[200, 30, 0, 160]',
+                get_radius=200,
+                ),
+        ],
+        ))))
 
 df = pd.DataFrame(
     np.random.randn(200, 3),
