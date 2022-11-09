@@ -10,12 +10,12 @@ import datetime
 
 
 # SETTING PAGE CONFIG TO WIDE MODE AND ADDING A TITLE AND FAVICON
-st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="🧠")
+st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="⚙️")
 
 st.title('Novus Mando ⚙️ - YoComproEn  🛒')
 st.write("""
 **Tecnología Novus Solutions**
-- Portafolio `Monitores` con `Alarmas` y `Recomendaciones`
+- Portafolio Novus Mando ⚙️: `Monitores` con `Alarmas` y `Recomendaciones`
 """)
 st.write('---')
 
