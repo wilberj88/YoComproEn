@@ -13,7 +13,12 @@ import datetime
 st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="🧠")
 
 st.title('Novus Mando ⚙️ - YoComproEn  🛒')
-st.text('Monitor + Alarmas + Recomendaciones')
+st.write("""
+**Tecnología Novus Solutions**
+- Portafolio `Monitores` con `Alarmas` y `Recomendaciones`
+""")
+st.write('---')
+
 option = st.selectbox(
     'Elige la tienda de análisis',
     ('Aluche, Madrid', 'Talavera', 'Toledo'))
