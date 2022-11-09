@@ -77,11 +77,6 @@ df = pd.DataFrame(
     np.random.randn(200, 3),
     columns=['Hora', 'Ventas', 'Productos'])
 
-c = alt.Chart(df).mark_circle().encode(
-    x='Hora', y='Ventas', size='Productos', color='c', tooltip=['Hora', 'Ventas', 'Productos'])
-
-st.write(c)
-
 st.write(pd.DataFrame({
     'Horas de mayores ventas': [1, 2, 3, 4],
     'ID de productos más vendidos': [10, 20, 30, 40],
