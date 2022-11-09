@@ -30,7 +30,7 @@ col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
 col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 hora_seleccionada = st.slider(
     "Selecciona una hora de análisis", 0, 23)
-st.write("Desagregación geográfica")
+st.write("Desagregación geográfica para la hora ", hora_seleccionada, "en ", option)
 
 df = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
