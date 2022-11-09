@@ -79,7 +79,17 @@ st.text('Las horas de mayor facturación son en la madrugada (1h,0h,2h), seguido
 
 #ALARMAS
 st.header("Alarmas de Bajas Ventas ⚠️")
-st.write('1 + 1 = ', 2)
+
+alarma1, alarma2, alarma3 = st.columns(3)
+alarma1.metric("Productos - vendidos", "1/2/18", "-85%prom")
+alarma2.metric("Horarios - vendidos", "16h.13h.18h", "-73%prom")
+alarma3.metric("Inventario + rotación", "8-32-33", "485%prom")
+st.write(df.head())
+
+st.write('ID TOP 1 Producto de menor facturación', 1)
+st.write('ID TOP 2 Producto de menor facturación', 2)
+st.write('ID TOP 3 Producto de menor facturación', 18)
+
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 st.text('This is some text.')
 
