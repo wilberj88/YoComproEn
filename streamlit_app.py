@@ -29,6 +29,11 @@ col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
 col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
 col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 
+
+hora_seleccionada = st.slider(
+    "Selecciona una hora de análisis", 0, 23)
+
+
 x1 = np.random.randn(200) - 2
 x2 = np.random.randn(200)
 x3 = np.random.randn(200) + 2
@@ -43,19 +48,12 @@ fig = ff.create_distplot(hist_data, group_labels, bin_size=[.1, .25, .5])
 # Plot!
 st.plotly_chart(fig, use_container_width=True)
 
-st.write('Top 3 de mejores productos y horas')
-st.write(pd.DataFrame({
-    'ID Productos más vendidos': [8, 32, 33],
-    'Horas de mayores ventas': [1, 0, 2]}))
-
-hora_seleccionada = st.slider(
-    "Selecciona una hora de análisis", 0, 23)
-st.write("Desagregación geográfica para la hora ", hora_seleccionada, "en ", option)
-
 
 df = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
     columns=['lat', 'lon'])
+
+st.write("Desagregación geográfica para la hora ", hora_seleccionada, "en las tiendas de Madrid")
 
 st.write(
     pdk.Deck(map_style="mapbox://styles/mapbox/light-v9",
@@ -84,6 +82,14 @@ st.write(
                 ),
         ],
         ))
+
+
+st.write('Top 3 de mejores productos y horas')
+st.write(pd.DataFrame({
+    'ID Productos más vendidos': [8, 32, 33],
+    'Horas de mayores ventas': [1, 0, 2]}))
+
+
 
 st.markdown('CONCLUSIONES MONITOR:')
 st.text('3 productos (ID=8,32,33) de 38 generan más del 50% de la facturación de los últimos 130 días')
