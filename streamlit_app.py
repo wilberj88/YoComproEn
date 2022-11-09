@@ -32,8 +32,7 @@ col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 
 st.write(pd.DataFrame({
     'Productos más vendidos': [8, 32, 33],
-    'Horas de mayores ventas': [1, 0, 2],
-}))
+    'Horas de mayores ventas': [1, 0, 2]}))
 
 
 hora_seleccionada = st.slider(
@@ -50,7 +49,7 @@ st.write(
         initial_view_state={
             "latitude": 40.3875,
             "longitude": -3.7575416667,
-            "zoom": 8,
+            "zoom": 12,
             "pitch": 50},
         layers=[
             pdk.Layer(
