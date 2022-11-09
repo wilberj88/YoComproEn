@@ -32,14 +32,12 @@ hora_seleccionada = st.slider(
     "Selecciona una hora de análisis", 0, 23)
 st.write(1234)
 st.write(
-    pdk.Deck(
-        map_style="mapbox://styles/mapbox/light-v9",
+    pdk.Deck(map_style="mapbox://styles/mapbox/light-v9",
         initial_view_state={
             "latitude": 40.3875,
             "longitude": -3.7575416667,
             "zoom": 12,
-            "pitch": 50,
-        })
+            "pitch": 50})
 
 df = pd.DataFrame(
     np.random.randn(200, 3),
