@@ -13,6 +13,9 @@ import datetime
 st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="🧠")
 
 st.title('Novus Mando ⚙️ - YoComproEn  🛒')
+st.text('Monitor + Alarmas + Recomendaciones')
+st.caption('Datos del 27 de junio de 2022 a 4 de noviembre de 2022: 130 días ☀️ con sus noches 🌛')
+
 
 #MONITOR
 st.header("Monitor de Horarios y Productos 📺")
