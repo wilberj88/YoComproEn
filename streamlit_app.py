@@ -84,14 +84,19 @@ alarma1, alarma2, alarma3 = st.columns(3)
 alarma1.metric("Productos - vendidos", "1/2/18", "-85%prom")
 alarma2.metric("Horarios - vendidos", "16h.13h.18h", "-73%prom")
 alarma3.metric("Inventario + rotación", "8-32-33", "485%prom")
-st.write(df.head())
 
+chart_data = pd.DataFrame(np.random.randn(23, 3), columns=["Efectivo", "TarjetaCrédito", "TarjetaDébito"])
+st.area_chart(chart_data)
+    
+    
 st.write('ID TOP 1 Producto de menor facturación', 1)
 st.write('ID TOP 2 Producto de menor facturación', 2)
 st.write('ID TOP 3 Producto de menor facturación', 18)
 
-st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
-st.text('This is some text.')
+st.markdown('CONCLUSIONES ALARMAS:')
+st.text('3 productos (ID=1,2,18) están concentrando la peor facturación de los últimos 130 días')
+st.text('Las horas de menor facturación son en la tarde (16h,13h,18h)')
+
 
 
 #RECOMENDACIONES
