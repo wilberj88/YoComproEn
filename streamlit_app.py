@@ -30,10 +30,10 @@ col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
 col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 hora_seleccionada = st.slider(
     "Selecciona una hora de análisis", 0, 23)
-st.write(1234)
+st.write("Desagregación geográfica")
 
 df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
     columns=['lat', 'lon'])
 
 st.map(df)
@@ -43,7 +43,7 @@ st.write(
         initial_view_state={
             "latitude": 40.3875,
             "longitude": -3.7575416667,
-            "zoom": 12,
+            "zoom": 10,
             "pitch": 50},
         layers=[
             pdk.Layer(
