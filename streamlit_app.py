@@ -29,9 +29,9 @@ col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
 col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
 col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 
- x1 = np.random.randn(200) - 2
- x2 = np.random.randn(200)
- x3 = np.random.randn(200) + 2
+x1 = np.random.randn(200) - 2
+x2 = np.random.randn(200)
+x3 = np.random.randn(200) + 2
 
 # Group data together
 hist_data = [x1, x2, x3]
