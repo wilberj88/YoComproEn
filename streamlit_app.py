@@ -29,12 +29,24 @@ col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
 col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
 col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 
-st.write('Top 3 de mejores productos y horas')
+ x1 = np.random.randn(200) - 2
+ x2 = np.random.randn(200)
+ x3 = np.random.randn(200) + 2
 
+# Group data together
+hist_data = [x1, x2, x3]
+
+group_labels = ['Ventas Julio', 'Ventas Agosto', 'Ventas Septiembre']
+
+# Create distplot with custom bin_size
+fig = ff.create_distplot(hist_data, group_labels, bin_size=[.1, .25, .5])
+# Plot!
+st.plotly_chart(fig, use_container_width=True)
+
+st.write('Top 3 de mejores productos y horas')
 st.write(pd.DataFrame({
     'ID Productos más vendidos': [8, 32, 33],
     'Horas de mayores ventas': [1, 0, 2]}))
-
 
 hora_seleccionada = st.slider(
     "Selecciona una hora de análisis", 0, 23)
@@ -87,7 +99,6 @@ alarma3.metric("Inventario + rotación", "8-32-33", "485%prom")
 
 chart_data = pd.DataFrame(np.random.randn(23, 3), columns=["Efectivo", "TarjetaCrédito", "TarjetaDébito"])
 st.area_chart(chart_data)
-    
     
 st.write('ID TOP 1 Producto de menor facturación', 1)
 st.write('ID TOP 2 Producto de menor facturación', 2)
