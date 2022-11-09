@@ -44,7 +44,7 @@ df = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
     columns=['lat', 'lon'])
 
-st.write("Desagregación geográfica para la hora ", hora_seleccionada, "en las tiendas de Madrid")
+st.write("Desagregación geográfica  de las ventas para la hora ", hora_seleccionada, "en las tiendas de Madrid")
 
 st.write(
     pdk.Deck(map_style="mapbox://styles/mapbox/light-v9",
