@@ -50,14 +50,14 @@ st.write(
         initial_view_state={
             "latitude": 40.3875,
             "longitude": -3.7575416667,
-            "zoom": 10,
+            "zoom": 8,
             "pitch": 50},
         layers=[
             pdk.Layer(
                 'HexagonLayer',
                 data=df,
                 get_position='[lon, lat]',
-                radius=200,
+                radius=150,
                 elevation_scale=4,
                 elevation_range=[0, 1000],
                 pickable=True,
