@@ -14,18 +14,18 @@ st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="⚙️")
 
 st.title('Novus Mando ⚙️ - YoComproEn  🛒')
 
+option = st.selectbox(
+    'Elige la tienda de análisis',
+    ('Aluche, Madrid', 'Talavera', 'Toledo'))
+if option == 'Aluche, Madrid':
+    st.write('Tienda Aluche, Madrid. Datos del 27 de junio de 2022 a 4 de noviembre de 2022: 130 días ☀️ con sus noches 🌛')
+
 st.write('---')
 st.write("""
 **Tecnología Novus Solutions**
 - ⚙️: `Monitores de Ventas por Horas y Productos` con `Alarmas de Bajas Ventas` y `Recomendaciones para más Ventas`
 """)
 st.write('---')
-
-option = st.selectbox(
-    'Elige la tienda de análisis',
-    ('Aluche, Madrid', 'Talavera', 'Toledo'))
-if option == 'Aluche, Madrid':
-    st.write('Tienda Aluche, Madrid. Datos del 27 de junio de 2022 a 4 de noviembre de 2022: 130 días ☀️ con sus noches 🌛')
 
 
 
