@@ -17,7 +17,7 @@ st.title('Novus Mando ⚙️ - YoComproEn  🛒')
 st.write('---')
 st.write("""
 **Tecnología Novus Solutions**
-- Portafolio Novus Mando ⚙️: `Monitores de Ventas por Horas y Productos` con `Alarmas de Bajas Ventas` y `Recomendaciones para más Ventas`
+- ⚙️: `Monitores de Ventas por Horas y Productos` con `Alarmas de Bajas Ventas` y `Recomendaciones para más Ventas`
 """)
 st.write('---')
 
