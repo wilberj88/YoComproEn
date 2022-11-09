@@ -33,22 +33,6 @@ col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 hora_seleccionada = st.slider(
     "Selecciona una hora de análisis", 0, 23)
 
-
-x1 = np.random.randn(200) - 2
-x2 = np.random.randn(200)
-x3 = np.random.randn(200) + 2
-
-# Group data together
-hist_data = [x1, x2, x3]
-
-group_labels = ['Ventas Julio', 'Ventas Agosto', 'Ventas Septiembre']
-
-# Create distplot with custom bin_size
-fig = ff.create_distplot(hist_data, group_labels, bin_size=[.1, .25, .5])
-# Plot!
-st.plotly_chart(fig, use_container_width=True)
-
-
 df = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
     columns=['lat', 'lon'])
@@ -83,6 +67,20 @@ st.write(
         ],
         ))
 
+
+x1 = np.random.randn(200) - 2
+x2 = np.random.randn(200)
+x3 = np.random.randn(200) + 2
+
+# Group data together
+hist_data = [x1, x2, x3]
+
+group_labels = ['Ventas Julio', 'Ventas Agosto', 'Ventas Septiembre']
+
+# Create distplot with custom bin_size
+fig = ff.create_distplot(hist_data, group_labels, bin_size=[.1, .25, .5])
+# Plot!
+st.plotly_chart(fig, use_container_width=True)
 
 st.write('Top 3 de mejores productos y horas')
 st.write(pd.DataFrame({
