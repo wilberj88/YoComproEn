@@ -31,12 +31,6 @@ col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 hora_seleccionada = st.slider(
     "Selecciona una hora de análisis", 0, 23)
 st.write("Desagregación geográfica para la hora ", hora_seleccionada, "en ", option)
-
-df = pd.DataFrame(
-    np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
-    columns=['lat', 'lon'])
-
-st.map(df)
     
 st.write(
     pdk.Deck(map_style="mapbox://styles/mapbox/light-v9",
@@ -86,6 +80,7 @@ st.write('1 + 1 = ', 2)
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 st.text('This is some text.')
 
+
 #RECOMENDACIONES
 st.header("Recomendaciones para Aumentar Ventas 🧠")
 st.write(1234)
@@ -93,10 +88,16 @@ st.write(pd.DataFrame({
     'first column': [1, 2, 3, 4],
     'second column': [10, 20, 30, 40],
 }))
-st.text('This is some text.')
+
+st.text('Potenciales zonas de mayor facturación')
+
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
+    columns=['lat', 'lon'])
+
+st.map(df)
 
 st.caption('Datos del 27 de junio de 2022 a 4 de noviembre de 2022: 130 días ☀️ con sus noches 🌛')
-
 
 
 
