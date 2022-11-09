@@ -31,7 +31,12 @@ col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 hora_seleccionada = st.slider(
     "Selecciona una hora de análisis", 0, 23)
 st.write("Desagregación geográfica para la hora ", hora_seleccionada, "en ", option)
-    
+
+
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [40.3875, -3.7575416667],
+    columns=['lat', 'lon'])
+
 st.write(
     pdk.Deck(map_style="mapbox://styles/mapbox/light-v9",
         initial_view_state={
