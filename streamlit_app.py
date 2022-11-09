@@ -28,6 +28,14 @@ col1, col2, col3 = st.columns(3)
 col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
 col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
 col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
+
+
+st.write(pd.DataFrame({
+    'Productos más vendidos': [8, 32, 33],
+    'Horas de mayores ventas': [1, 0, 2],
+}))
+
+
 hora_seleccionada = st.slider(
     "Selecciona una hora de análisis", 0, 23)
 st.write("Desagregación geográfica para la hora ", hora_seleccionada, "en ", option)
