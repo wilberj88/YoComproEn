@@ -74,17 +74,19 @@ st.write(
 
 df = pd.DataFrame(
     np.random.randn(200, 3),
-    columns=['a', 'b', 'c'])
+    columns=['Hora', 'Ventas', 'Productos'])
+
 c = alt.Chart(df).mark_circle().encode(
-    x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
+    x='Hora', y='Ventas', size='Productos', color='c', tooltip=['Hora', 'Ventas', 'Productos'])
 
 st.write(c)
 
 st.write(pd.DataFrame({
-    'first column': [1, 2, 3, 4],
-    'second column': [10, 20, 30, 40],
+    'Horas de mayores ventas': [1, 2, 3, 4],
+    'ID de productos más vendidos': [10, 20, 30, 40],
 }))
-st.text('This is some text.')
+st.text('3 productos de 30 generan más del 50% de la facturación')
+st.text('Las horas de mayor facturación son en la madrugada, seguido de la mañana')
 
 #ALARMAS
 st.header("Alarmas de Bajas Ventas ⚠️")
