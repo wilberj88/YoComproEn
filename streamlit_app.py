@@ -134,11 +134,11 @@ st.text('Las horas de menor facturación son en la tarde (16h,13h,18h)')
 
 #RECOMENDACIONES
 st.header("Recomendaciones para Aumentar Ventas 🧠")
-st.write(1234)
-st.write(pd.DataFrame({
-    'first column': [1, 2, 3, 4],
-    'second column': [10, 20, 30, 40],
-}))
+
+rec1, rec2, rec3 = st.columns(3)
+rec1.metric("Horario de mayor potencial de crecimiento", "4pm", "-85%prom")
+rec2.metric("Productos de mayor potencial de crecimiento", "ID_08", "-73%prom")
+rec3.metric("Productos sin tracción requerida para matenerse", "1-2-18", "485%prom")
 
 st.text('Potenciales zonas de mayor facturación')
 
