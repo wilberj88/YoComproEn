@@ -42,7 +42,7 @@ st.write(
         initial_view_state={
             "latitude": 40.3875,
             "longitude": -3.7575416667,
-            "zoom": 13,
+            "zoom": 10,
             "pitch": 50},
         layers=[
             pdk.Layer(
