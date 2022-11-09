@@ -29,12 +29,12 @@ st.write('---')
 
 
 
-#MONITOR
-st.header("Monitor de Horarios y Productos 📺")
+#MONITOR 1: HORARIOS
+st.header("Monitor 📺 de Horarios ⏰")
 col1, col2, col3 = st.columns(3)
-col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
-col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
-col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
+col1.metric(label ="Hora Top 1 en Ventas", value = '1', delta='362%')
+col2.metric("Hora Top 2 en Ventas", "0", "317%")
+col3.metric("Hora Top 3 en Ventas", "2", "289%")
 
 
 hora_seleccionada = st.slider(
@@ -74,6 +74,17 @@ st.write(
         ],
         ))
 
+st.markdown('CONCLUSIONES MONITOR HORAS:')
+st.text('Las horas de mayor facturación son en la madrugada (1h,0h,2h), seguido de la mañana (8am,9am,10am)')
+
+
+#MONITOR 2: PRODUCTOS
+st.header("Monitor 📺 de Productos 🛒")
+col1, col2, col3 = st.columns(3)
+col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
+col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
+col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
+
 
 x1 = np.random.randn(200) - 2
 x2 = np.random.randn(200)
@@ -96,9 +107,9 @@ st.write(pd.DataFrame({
 
 
 
-st.markdown('CONCLUSIONES MONITOR:')
+st.markdown('CONCLUSIONES MONITOR PRODUCTOS:')
 st.text('3 productos (ID=8,32,33) de 38 generan más del 50% de la facturación de los últimos 130 días')
-st.text('Las horas de mayor facturación son en la madrugada (1h,0h,2h), seguido de la mañana (8am,9am,10am)')
+
 
 #ALARMAS
 st.header("Alarmas de Bajas Ventas ⚠️")
