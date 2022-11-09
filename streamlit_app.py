@@ -39,8 +39,7 @@ st.write(
             "longitude": -3.7575416667,
             "zoom": 12,
             "pitch": 50,
-        }
-)
+        })
 
 df = pd.DataFrame(
     np.random.randn(200, 3),
