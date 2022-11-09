@@ -19,6 +19,10 @@ st.caption('Tienda Aluche, Madrid. Datos del 27 de junio de 2022 a 4 de noviembr
 
 #MONITOR
 st.header("Monitor de Horarios y Productos 📺")
+col1, col2, col3 = st.columns(3)
+col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
+col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
+col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 st.write(1234)
 
 df = pd.DataFrame(
