@@ -73,9 +73,9 @@ st.write(
         ],
         ))
 
-st.markdown('CONCLUSIONES MONITOR')
-st.text('3 productos de 30 generan más del 50% de la facturación')
-st.text('Las horas de mayor facturación son en la madrugada, seguido de la mañana')
+st.markdown('CONCLUSIONES MONITOR:')
+st.text('3 productos (ID=8,32,33) de 38 generan más del 50% de la facturación de los últimos 130 días')
+st.text('Las horas de mayor facturación son en la madrugada (1h,0h,2h), seguido de la mañana (8am,9am,10am)')
 
 #ALARMAS
 st.header("Alarmas de Bajas Ventas ⚠️")
