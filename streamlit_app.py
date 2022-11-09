@@ -30,7 +30,7 @@ st.write('---')
 
 
 #MONITOR 1: HORARIOS
-st.header("Monitor 📺 de Horarios ⏰")
+st.header("Monitor 📺 de Ventas por Horarios ⏰")
 col1, col2, col3 = st.columns(3)
 col1.metric(label ="Hora Top 1 en Ventas", value = '1', delta='362%')
 col2.metric("Hora Top 2 en Ventas", "0", "317%")
@@ -79,7 +79,7 @@ st.text('Las horas de mayor facturación son en la madrugada (1h,0h,2h), seguido
 
 
 #MONITOR 2: PRODUCTOS
-st.header("Monitor 📺 de Productos 🛒")
+st.header("Monitor 📺 de Ventas por Productos 🛒")
 col1, col2, col3 = st.columns(3)
 col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
 col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
