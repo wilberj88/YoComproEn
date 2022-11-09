@@ -18,9 +18,7 @@ option = st.selectbox(
     'Elige la tienda de análisis',
     ('Aluche, Madrid', 'Talavera', 'Toledo'))
 if option == 'Aluche, Madrid':
-    st.write('You selected:', option)
-    st.caption('Tienda Aluche, Madrid. Datos del 27 de junio de 2022 a 4 de noviembre de 2022: 130 días ☀️ con sus noches 🌛')
-
+    st.write('Tienda Aluche, Madrid. Datos del 27 de junio de 2022 a 4 de noviembre de 2022: 130 días ☀️ con sus noches 🌛')
 
 
 
