@@ -32,7 +32,7 @@ col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 st.write('Top 3 de mejores productos y horas')
 
 st.write(pd.DataFrame({
-    'Productos más vendidos': [8, 32, 33],
+    'ID Productos más vendidos': [8, 32, 33],
     'Horas de mayores ventas': [1, 0, 2]}))
 
 
