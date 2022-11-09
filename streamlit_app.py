@@ -13,6 +13,8 @@ import datetime
 st.set_page_config(layout="wide", page_title="Novus Mando", page_icon="⚙️")
 
 st.title('Novus Mando ⚙️ - YoComproEn  🛒')
+
+st.write('---')
 st.write("""
 **Tecnología Novus Solutions**
 - Portafolio Novus Mando ⚙️: `Monitores` con `Alarmas` y `Recomendaciones`
