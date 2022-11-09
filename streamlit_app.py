@@ -32,9 +32,9 @@ st.write('---')
 #MONITOR 1: HORARIOS
 st.header("Monitor 📺 de Ventas por Horarios ⏰")
 col1, col2, col3 = st.columns(3)
-col1.metric(label ="Hora Top 1 en Ventas", value = '1', delta='362%')
-col2.metric("Hora Top 2 en Ventas", "0", "317%")
-col3.metric("Hora Top 3 en Ventas", "2", "289%")
+col1.metric(label ="Hora Top 1 en Ventas", value = '1am', delta='362%')
+col2.metric("Hora Top 2 en Ventas", "0am", "317%")
+col3.metric("Hora Top 3 en Ventas", "2am", "289%")
 
 
 hora_seleccionada = st.slider(
