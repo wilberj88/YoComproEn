@@ -35,7 +35,8 @@ st.write(1234)
 df = pd.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
     columns=['lat', 'lon'])
-    st.map(df)
+
+st.map(df)
     
 st.write(
     pdk.Deck(map_style="mapbox://styles/mapbox/light-v9",
