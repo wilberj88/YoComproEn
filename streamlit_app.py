@@ -29,6 +29,7 @@ col1.metric(label ="Ventas Agregadadas", value = '7.572€', delta='27Jun4Nov')
 col2.metric("Ventas Máquina A", "86,18%", "27Jun4Nov")
 col3.metric("Ventas Máquina B", "13,81%", "27Jun4Nov")
 
+st.write('Top 3 de mejores productos y horas')
 
 st.write(pd.DataFrame({
     'Productos más vendidos': [8, 32, 33],
